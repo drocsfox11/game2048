@@ -1,0 +1,227 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 2px;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+  
+  .cell.highlight {
+    background-color: #ddd;
+  }
+  
+  .cell.error {
+    background-color: #ffcccc;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    height: 450px;
+    margin: auto;
+    border: 2px solid #bbada0;
+    box-sizing: border-box;
+  }
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    background-color: #eee4da;
+    border-radius: 6px;
+    margin: 4px;
+    box-sizing: border-box;
+    
+  }
+  .score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 406px;
+    height: 50px;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+    background-color: #faf8ef;
+    border: 2px solid #bbada0;
+    box-sizing: border-box;
+  }
+
+.cell-2{
+  background-color: #efe5da;
+  color:#786e61;
+}
+
+.cell-4{
+  background-color: #ece0c6;
+  color: #786e61;
+}
+
+.cell-8{
+  background-color:#f1b179;
+  color: white;
+}
+
+.cell-16{
+  background-color: #f3956b;
+  color: white;
+}
+
+.cell-32{
+  background-color: #f77c5f;
+  color: white;
+}
+
+.cell-64{
+  background-color: #f55e3a;
+  color: white;
+}
+
+.cell-128{
+  background-color: #edce72;
+  color: white;
+}
+
+.cell-256{
+  background-color: #edca69;
+  color: white;
+}
+
+.cell-512{
+  background-color: #ecc859;
+  color: white;
+}
+
+.cell-1024{
+  background-color: #e8c258;
+  color: white;
+}
+
+.cell-2048{
+  background-color: #e7be4d;
+  color: white;
+}
+
+.cell-4096{
+  background-color: #bc2024;
+  color: white;
+}
+
+.cell-8192{
+  background-color: #bc2024;
+  color: white;
+}
+
+.cell-16384{
+  background-color: #bc2024;
+  color: white;
+}
+
+.cell-32768{
+  background-color: #bc2024;
+  color: white;
+}
+
+.cell-65536{
+  background-color: #bc2024;
+  color: white;
+}
+
+.cell-131072{
+  background-color: #bc2024;
+  color: white;
+}
+
+.restart_btn{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 406px;
+    height: 50px;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+    background-color: #faf8ef;
+    border: 2px solid #bbada0;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+body {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  animation: bg-scrolling-reverse 0.92s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+body::before {
+  content: "2048";
+  font-size: 68px;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
